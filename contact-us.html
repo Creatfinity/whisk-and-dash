@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Account Deletion - Namehere</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Chewy', cursive;
+            background-color: #f3ede4;
+            color: #5e4b3c;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 48px;
+            color: #8c5c3c;
+            text-shadow: 2px 2px 0 #e1c5a0;
+        }
+        .deletion-form {
+            margin: 20px;
+            max-width: 500px;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+        }
+        .deletion-form h2 {
+            color: #8c5c3c;
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+        .deletion-form p {
+            font-size: 16px;
+            color: #7a5a42;
+            margin-bottom: 20px;
+        }
+        .deletion-form label {
+            font-size: 18px;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .deletion-form input, .deletion-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #d4b598;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .deletion-form button {
+            background: linear-gradient(to right, #b16d41, #e0a96b);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .deletion-form button:hover {
+            background: linear-gradient(to left, #b16d41, #e0a96b);
+        }
+        .back-btn {
+            margin-top: 20px;
+            background-color: #7a5a42;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #684735;
+        }
+    </style>
+</head>
+<body>
+    <h1>Request Account Deletion</h1>
+    <div class="deletion-form">
+        <h2>We’re Sad to See You Go!</h2>
+        <p>If you’d like to delete your account, please fill out the form below. You can also delete your account directly in the app under <strong>Settings > Delete Account</strong>. We’re always here if you change your mind!</p>
+        <form action="mailto:creatfinity@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reason">Reason for Leaving (Optional):</label>
+            <textarea id="reason" name="reason" rows="5"></textarea>
+
+            <button type="submit">Request Deletion</button>
+        </form>
+        <a href="#" class="back-btn">Back to Home</a>
+    </div>
+</body>
+</html>
